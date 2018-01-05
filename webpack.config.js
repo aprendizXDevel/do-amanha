@@ -81,5 +81,5 @@ module.exports = env => {
 	if (env === "production") {
 		return merge(defaultConfig, prodConfig);
 	}
-	return merge(defaultConfig, prodConfig);
+	return merge(defaultConfig, devConfig);
 };
