@@ -20,9 +20,37 @@
     	}
     }
   }
+
+  .journey-middle {
+  	background-color: #e8e8e8;
+    padding: 90px 0;
+
+    .container {
+    	display: flex;
+    	justify-content: center;
+		position: relative;
+
+    	&::after {
+    		content: "";
+    		position: absolute;
+    		background: white;
+    		top: 50px;
+    		left: 28vw; //290px;
+    		width: 410px;
+    		height: 20px;
+    		z-index: 0;
+    	}
+    }
+  }
 }
 
 .journey-title__text {
+	color: $blue-dark;
+	font-size: 1.5em;
+	z-index: 2;
+}
+
+.journey-middle__text {
 	color: $blue-dark;
 	font-size: 1.5em;
 	z-index: 2;
@@ -61,6 +89,9 @@
 
 	.journey-step__title__elements {
 		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		margin: 10px;
 	}
 
@@ -78,5 +109,22 @@
 
 	.title-python {
 		background: #f1b948;
+		padding-left: 15px;
 	}
+
+	.icon-python {
+		font-size: 1.6em;
+	}
+
+	.title-forum {
+		background: #01dbcb;
+	}
+
+	.fa-comments {
+		font-size: 1.6em;
+	}
+}
+
+.journey-forum {
+	height: 360px;
 }
