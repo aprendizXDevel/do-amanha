@@ -2,5 +2,28 @@
   .journey-title {
     background-color: #e8e8e8;
     padding: 90px 0;
+
+    .container {
+    	display: flex;
+    	justify-content: center;
+		position: relative;
+
+    	&::after {
+    		content: "";
+    		position: absolute;
+    		background: white;
+    		top: 50px;
+    		left: 290px;
+    		width: 410px;
+    		height: 20px;
+    		z-index: 0;
+    	}
+    }
   }
+}
+
+.journey-title__text {
+	color: $blue-dark;
+	font-size: 1.5em;
+	z-index: 2;
 }
