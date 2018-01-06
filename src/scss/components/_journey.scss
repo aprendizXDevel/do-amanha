@@ -13,7 +13,7 @@
     		position: absolute;
     		background: white;
     		top: 50px;
-    		left: 290px;
+    		left: 28vw; //290px;
     		width: 410px;
     		height: 20px;
     		z-index: 0;
@@ -26,4 +26,46 @@
 	color: $blue-dark;
 	font-size: 1.5em;
 	z-index: 2;
+}
+
+.journey-step {
+	background: #f5f5f5;
+	.container {
+		display: flex;
+		width: 100%;
+		margin: 0 0 0 0;
+	}
+}
+
+.journey-step__content {
+	flex-grow: 2;
+	padding: 30px;
+	margin-top: 50px;
+
+	.journey-step__text {
+		position: relative;
+		background: white;
+		padding: 70px;
+	}
+}
+
+.journey-step__title {
+	display: flex;
+	position: absolute;
+	top: -30px;
+	font-size: 2em;
+
+	.journey-step__title__elements {
+		background: $blue-dark;
+		color: white;
+		margin: 10px;
+	}
+
+	.journey-step__icon {
+		padding: 10px 10px 10px 10px;
+	}
+
+	.journey-step__subject {
+		padding: 5px 25px 16px 25px;
+	}
 }
