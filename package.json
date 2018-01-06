@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build": "webpack --env production",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",

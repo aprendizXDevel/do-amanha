@@ -1,0 +1,48 @@
+.top-header {
+  background-color: $pink;
+  width: 100%;
+  max-height: 60px;
+  height: 60px;
+}
+
+.main-header {
+  background-color: #249af3;
+  width: 100%;
+  padding: 170px 0;
+  text-align: center;
+  border-bottom: 22px solid $blue-dark;
+
+  .title-header {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-color: $pink;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      height: 35px;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+
+  h1, h2 {
+    color: #fff;
+    margin: 0;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 7em;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+  }
+
+  h2 {
+    font-size: 65px;
+  }
+}
