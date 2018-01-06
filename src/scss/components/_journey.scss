@@ -38,7 +38,11 @@
 }
 
 .journey-step__content {
+	display: flex;
 	flex-grow: 2;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 700px;
 	padding: 30px;
 	margin-top: 50px;
 
@@ -56,7 +60,6 @@
 	font-size: 2em;
 
 	.journey-step__title__elements {
-		background: $blue-dark;
 		color: white;
 		margin: 10px;
 	}
@@ -67,5 +70,13 @@
 
 	.journey-step__subject {
 		padding: 5px 25px 16px 25px;
+	}
+
+	.title-english {
+		background: #1969a6;
+	}
+
+	.title-python {
+		background: #f1b948;
 	}
 }
