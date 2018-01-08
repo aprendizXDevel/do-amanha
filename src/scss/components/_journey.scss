@@ -20,40 +20,60 @@
     	}
     }
   }
-
-  .journey-middle {
-  	background-color: #e8e8e8;
-    padding: 90px 0;
-
-    .container {
-    	display: flex;
-    	justify-content: center;
-		position: relative;
-
-    	&::after {
-    		content: "";
-    		position: absolute;
-    		background: white;
-    		top: 50px;
-    		left: 28vw; //290px;
-    		width: 410px;
-    		height: 20px;
-    		z-index: 0;
-    	}
-    }
-  }
 }
 
 .journey-title__text {
 	color: $blue-dark;
 	font-size: 1.5em;
+	flex-grow: 2;
+	margin-left: 120px;
 	z-index: 2;
 }
 
-.journey-middle__text {
-	color: $blue-dark;
-	font-size: 1.5em;
-	z-index: 2;
+.journey-title__milestone {
+	border-right: 5px solid gray;
+	position: relative;
+	margin-bottom: -90px;
+	margin-top: -90px;
+	width: 15.2%;
+
+	.fa-flag {
+		background: $blue-dark;
+		border-radius: 50%;
+		color: white;
+		padding: 15px;
+		position: absolute;
+		right: -35px;
+		top: -20px;
+		font-size: 2em;
+	}
+
+	.fa-rocket {
+		background: $blue-dark;
+		border-radius: 50%;
+		color: white;
+		padding: 15px;
+		position: absolute;
+		right: -35px;
+		top: 42%;
+		font-size: 2em;
+	}
+
+	.fa-book {
+		background: $blue-dark;
+		border-radius: 50%;
+		color: white;
+		padding: 15px;
+		position: absolute;
+		right: -35px;
+		top: 42%;
+		font-size: 2em;
+	}
+}
+
+.journey-title__milestone-title {
+	margin-top: 50px;
+	margin-bottom: -90px;
 }
 
 .journey-step {
@@ -65,9 +85,31 @@
 	}
 }
 
+.journey-step__milestone {
+	border-right: 5px solid gray;
+	width: 587px;
+	position: relative;
+
+	.checkmark {
+		position: absolute;
+		top: 150px;
+		right: -28px;
+		width: 50px;
+	}
+
+	.green-light-ball {
+		background: $green-light;
+		border-radius: 50%;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top: 570px;
+		right: -28px;
+	}
+}
+
 .journey-step__content {
 	display: flex;
-	flex-grow: 2;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 700px;
