@@ -1,25 +1,25 @@
 .journey {
-  .journey-title {
-    background-color: #e8e8e8;
-    padding: 90px 0;
+	display: flex;
+	
+	.journey-content {
+		width: 80%;
+	}
 
-    .container {
-    	display: flex;
-    	justify-content: center;
-		position: relative;
+	.progress-indicator {
+		border-right: 5px solid gray;
+		width: 20%;
+	}
+}
 
-    	&::after {
-    		content: "";
-    		position: absolute;
-    		background: white;
-    		top: 50px;
-    		left: 28vw; //290px;
-    		width: 410px;
-    		height: 20px;
-    		z-index: 0;
-    	}
-    }
-  }
+.journey-title {
+	background-color: #e8e8e8;
+	padding: 90px 0;
+	height: 100px;
+
+	.container {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .journey-title__text {
@@ -28,6 +28,28 @@
 	flex-grow: 2;
 	margin-left: 120px;
 	z-index: 2;
+	width: 100%;
+
+	h2 {
+		position: relative;
+
+		&::after {
+			background: white;
+			content: "";
+			width: 350px;
+			height: 20px;
+			position: absolute;
+			left: 9px;
+			top: 20px;
+			z-index: -1;
+		}
+	}
+
+	.special-journey-text {
+		&::after {
+			width: 400px;
+		}
+	}
 }
 
 .journey-title__milestone {
@@ -35,7 +57,7 @@
 	position: relative;
 	margin-bottom: -90px;
 	margin-top: -90px;
-	width: 15.2%;
+	width: 30%;
 
 	.fa-flag {
 		background: $blue-dark;
@@ -87,7 +109,7 @@
 
 .journey-step__milestone {
 	border-right: 5px solid gray;
-	width: 587px;
+	width: 30%;
 	position: relative;
 
 	.checkmark {
@@ -116,6 +138,43 @@
 		top: 150px;
 		right: -28px;
 	}
+
+	.progress-bar {
+		background: white;
+		width: 120px;
+		height: 420px;
+		margin: 200px 10px;
+		padding: 20px;
+		text-align: center;
+	}
+}
+
+.progress-balls {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.progress-green {
+	background: #3cb879;
+}
+
+.progress-blue {
+	background: #0cc7f2;
+}
+
+.progress-gray {
+	background: #c3c3c3;
+}
+
+.progress-gray-line {
+	background: #c3c3c3;
+	width: 5px;
+	height: 50px;
+	margin-left: 57px;
+	margin-bottom: 10px;
 }
 
 .journey-step__content {
@@ -123,6 +182,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	height: 700px;
+	width: 70%;
 	padding: 30px;
 	margin-top: 50px;
 
@@ -179,4 +239,30 @@
 
 .journey-forum {
 	height: 360px;
+}
+
+.gray-overlay {
+	background: #e8e8e8;
+	height: 150px;
+	margin-right: -10px;
+}
+
+.gray-background {
+	background: #e8e8e8;
+	height: 130px;
+}
+
+.light-gray-background-english-python {
+	background: #f5f5f5;
+	height: 810px;
+}
+
+.gray-background-step {
+	background: #e8e8e8;
+	height: 280px;
+}
+
+.light-gray-background-forum {
+	background: #f5f5f5;
+	height: 470px;
 }
