@@ -73,6 +73,7 @@ const defaultConfig = {
 		new HtmlWebpackPlugin({
 			title: "Yeah",
 			template: "index.html",
+			filename: "../index.html"
 		}),
 	],
 }

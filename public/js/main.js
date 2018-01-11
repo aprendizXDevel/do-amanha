@@ -72,17 +72,15 @@
 
 __webpack_require__(1);
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var progressBar = document.getElementById("progress-bar");
 
-var Ai = function Ai() {
-	_classCallCheck(this, Ai);
-
-	console.log("Hello World!");
-};
-
-;
-
-new Ai();
+window.addEventListener("scroll", function () {
+	if (window.scrollY > 1600) {
+		progressBar.classList.add("fix-scroll");
+	} else {
+		progressBar.classList.remove("fix-scroll");
+	}
+});
 
 /***/ }),
 /* 1 */
