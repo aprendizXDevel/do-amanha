@@ -23,3 +23,28 @@
     line-height: 24px;
   }
 }
+
+/* MM: Screen */
+@media screen and (max-width: 1280px) { }
+
+/* SM: Screen */
+@media screen and (max-width: 1024px) { }
+
+/* Tablet/iPad */
+@media screen and (max-width: 980px) { }
+
+/*iPhone 6/7*/
+@media screen and (max-width: 500px) { 
+  .intro {
+    .container {
+      flex-direction: column;
+    }
+
+    .intro-content {
+      margin-left: 0;
+    }
+  }
+}
+
+/*iPhone 5 */
+@media screen and (max-width: 320px) { }
