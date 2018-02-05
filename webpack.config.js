@@ -2,7 +2,8 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const merge = require("webpack-merge")
+const merge = require("webpack-merge");
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 const paths = {
 	mainJs: path.resolve(__dirname, "src", "js", "main.js"),
@@ -32,10 +33,25 @@ const devConfig = {
 		rules: [
 			{
 				test: /\.scss$/,
-				use: ['style-loader', 'css-loader', 'sass-loader'],
+				use: [{
+						loader: "style-loader"
+				}, {
+						loader: "css-loader"
+				}, {
+						loader: "sass-loader"
+				}]
 			},
 		],
 	},
+	plugins: [
+    new BrowserSyncPlugin({
+      // browse to http://localhost:3000/ during development,
+      // ./public directory is being served
+      host: 'localhost',
+      port: 3535,
+      server: { baseDir: ['public'] }
+    })
+  ]
 };
 
 const defaultConfig = {

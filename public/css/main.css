@@ -448,7 +448,7 @@ template {
   font-family: 'Montserrat', sans-serif; }
 
 .btn-white {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 6px 10.392px 17.22px 3.78px rgba(255, 255, 255, 0.21);
   color: #114873;
@@ -737,4 +737,4 @@ template {
 .fix-scroll {
   position: fixed;
   top: 50px;
-  left: 50px; }
+  left: 185px; }
