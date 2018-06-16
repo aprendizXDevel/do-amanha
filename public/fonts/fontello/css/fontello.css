@@ -61,3 +61,14 @@
 .icon-amanha-us:before { content: '\e803'; } /* '' */
 .icon-amanha-python:before { content: '\e804'; } /* '' */
 .icon-amanha-rocket:before { content: '\e805'; } /* '' */
+
+.imc {
+  margin-top: 7%;
+  margin-bottom: 7%;
+  height: 80%;
+  width: 100%;
+}
+
+.dgd {
+    background: -webkit-linear-gradient(45deg,#efefef 25%,transparent 25%,transparent 75%,#efefef 75%,#efefef),-webkit-linear-gradient(45deg,#efefef 25%,transparent 25%,transparent 75%,#efefef 75%,#efefef);
+}
